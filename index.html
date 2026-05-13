@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop4You - Quality Manufacturing Solutions for Nigerian Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #21130d;
+            --color-accent: #d5591b;
+            --color-bg: #F5EFE6;
+            --color-text: #2C1810;
+            --color-surface: #301c17;
+            --color-secondary-accent: #887c76;
+            --font-display: 'Barlow Condensed', sans-serif;
+            --font-body: 'Lato', sans-serif;
+            --border-radius: 2px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(245, 239, 230, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(33, 19, 13, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-family: var(--font-display);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-text);
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 300px;
+            height: calc(100vh - 70px);
+            background: var(--color-bg);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 0.5rem 0;
+            font-family: var(--font-display);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .mobile-menu ul a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 900px;
+            padding: 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--color-accent);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: var(--font-display);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+            box-shadow: 4px 4px 0 var(--color-primary);
+        }
+
+        .cta-button:hover {
+            background: var(--color-primary);
+            box-shadow: 6px 6px 0 var(--color-accent);
+            transform: translate(-2px, -2px);
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px 2rem;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.1s;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 8px 8px 0 var(--color-accent);
+        }
+
+        .about-content h2 {
+            font-size: 3rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        /* Services Section */
+        #services {
+            padding: 80px 2rem;
+            background: var(--color-surface);
+            color: var(--color-bg);
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-container h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--color-bg);
+            text-transform: uppercase;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--color-bg);
+            color: var(--color-text);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 4px 4px 0 var(--color-accent);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 8px 8px 0 var(--color-accent);
+        }
+
+        .service-card h3 {
+            font-size: 1.75rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            border-left: 4px solid var(--color-accent);
+            padding-left: 1rem;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 80px 2rem;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .contact-content h2 {
+            font-size: 3rem;
+            color: var(--color-primary);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--color-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--color-accent);
+        }
+
+        .contact-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 8px 8px 0 var(--color-primary);
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .whatsapp-float::before {
+            content: "💬";
+            font-size: 28px;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-primary);
+            color: var(--color-bg);
+            padding: 2rem;
+            text-align: center;
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image,
+            .contact-image {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            #about,
+            #services,
+            #contact {
+                padding: 48px 1.5rem;
+            }
+
+            .about-content h2,
+            .services-container h2,
+            .contact-content h2 {
+                font-size: 2rem;
+            }
+
+            .about-image,
+            .contact-image {
+                height: 300px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-float::before {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#hero" class="logo">Shop4You</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <img src="https://images.pexels.com/photos/30990849/pexels-photo-30990849.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Shop4You Manufacturing Facility" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Shop4You: Your Trusted Manufacturing Partner in Ikorodu</h1>
+            <p>Quality manufacturing solutions designed for Nigerian businesses. From production to delivery, we bring precision and reliability to every project.</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <img src="https://images.pexels.com/photos/12555018/pexels-photo-12555018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Shop4You Team" class="about-image">
+            <div class="about-content">
+                <h2>Welcome to Shop4You</h2>
+                <p>Based in the heart of Ikorodu, Lagos, Shop4You is a leading manufacturing company committed to delivering exceptional quality products and services to businesses across Nigeria.</p>
+                <p>Our state-of-the-art facility at 34 Oluwaseun Street combines modern manufacturing techniques with Nigerian ingenuity to produce solutions that meet the highest standards. We understand the unique needs of Nigerian businesses and tailor our manufacturing processes to deliver value, reliability, and excellence.</p>
+                <p>With a focus on quality control, timely delivery, and customer satisfaction, Shop4You has become the go-to manufacturing partner for businesses seeking dependable production solutions in Lagos and beyond.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-container">
+            <h2>Manufacturing Solutions Tailored to Your Needs</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Custom Manufacturing</h3>
+                    <p>We specialize in custom manufacturing solutions designed to meet your specific business requirements. From concept to completion, our team works closely with you to deliver products that exceed expectations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Quality Assurance</h3>
+                    <p>Every product undergoes rigorous quality control processes to ensure it meets international standards. Our commitment to excellence means you receive only the best.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Timely Delivery</h3>
+                    <p>We understand that time is money in business. Our efficient production systems and logistics ensure your orders are completed and delivered on schedule.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Consultation & Support</h3>
+                    <p>Our expert team provides comprehensive consultation services to help you optimize your manufacturing needs. We offer ongoing support throughout your project lifecycle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-content">
+                <h2>Get in Touch with Shop4You</h2>
+                <p>Ready to discuss your manufacturing needs? Our team is here to provide the solutions your business deserves.</p>
+                
+                <div class="contact-info">
+                    <h3>Visit Our Facility:</h3>
+                    <p>34, Oluwaseun Street<br>Ikorodu, Lagos<br>Nigeria</p>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Call Us:</h3>
+                    <p><a href="tel:+2349027556046">09027556046</a></p>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Business Hours:</h3>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM</p>
+                </div>
+                
+                <p>Whether you need a quote, consultation, or have questions about our manufacturing capabilities, don't hesitate to reach out. We look forward to partnering with you.</p>
+            </div>
+            <img src="https://images.pexels.com/photos/15621208/pexels-photo-15621208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Shop4You Reception" class="contact-image">
+        </div>
+    </section>
+
+    <a href="https://wa.me/2349027556046" target="_blank" class="whatsapp-float" aria-label="Contact us on WhatsApp"></a>
+
+    <footer>
+        <p>&copy; 2024 Shop4You. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
