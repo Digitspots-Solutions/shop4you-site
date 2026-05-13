@@ -1,0 +1,42 @@
+{
+  "businessName": "Shop4You",
+  "industry": "Manufacturing",
+  "tone": "professional",
+  "tagline": "Quality Manufacturing Solutions for Nigerian Businesses",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Shop4You: Your Trusted Manufacturing Partner in Ikorodu\n\nQuality manufacturing solutions designed for Nigerian businesses. From production to delivery, we bring precision and reliability to every project.\n\nGet Started Today",
+      "imagePrompt": "Modern Nigerian manufacturing facility interior with advanced machinery and equipment, workers in safety gear operating production lines, bright industrial lighting, clean organized workspace, Ikorodu Lagos setting, professional industrial photography, high quality, detailed, photorealistic",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Welcome to Shop4You\n\nBased in the heart of Ikorodu, Lagos, Shop4You is a leading manufacturing company committed to delivering exceptional quality products and services to businesses across Nigeria.\n\nOur state-of-the-art facility at 34 Oluwaseun Street combines modern manufacturing techniques with Nigerian ingenuity to produce solutions that meet the highest standards. We understand the unique needs of Nigerian businesses and tailor our manufacturing processes to deliver value, reliability, and excellence.\n\nWith a focus on quality control, timely delivery, and customer satisfaction, Shop4You has become the go-to manufacturing partner for businesses seeking dependable production solutions in Lagos and beyond.",
+      "imagePrompt": "Professional Nigerian manufacturing team standing proudly in front of their factory building, diverse group of workers and managers, Shop4You facility exterior with clear signage, Ikorodu Lagos neighborhood visible, bright daylight, corporate photography style, authentic Nigerian business setting, photorealistic",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "Manufacturing Solutions Tailored to Your Needs\n\nCustom Manufacturing\nWe specialize in custom manufacturing solutions designed to meet your specific business requirements. From concept to completion, our team works closely with you to deliver products that exceed expectations.\n\nQuality Assurance\nEvery product undergoes rigorous quality control processes to ensure it meets international standards. Our commitment to excellence means you receive only the best.\n\nTimely Delivery\nWe understand that time is money in business. Our efficient production systems and logistics ensure your orders are completed and delivered on schedule.\n\nConsultation & Support\nOur expert team provides comprehensive consultation services to help you optimize your manufacturing needs. We offer ongoing support throughout your project lifecycle.",
+      "imagePrompt": "Split screen collage showing various aspects of Nigerian manufacturing: quality control inspection with precision instruments, warehouse with organized inventory, delivery trucks being loaded, consultation meeting between engineers and clients, modern production floor with machinery, professional industrial setting, photorealistic, high detail",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "copy": "Get in Touch with Shop4You\n\nReady to discuss your manufacturing needs? Our team is here to provide the solutions your business deserves.\n\nVisit Our Facility:\n34, Oluwaseun Street\nIkorodu, Lagos\nNigeria\n\nCall Us:\n09027556046\n\nBusiness Hours:\nMonday - Friday: 8:00 AM - 6:00 PM\nSaturday: 9:00 AM - 2:00 PM\n\nWhether you need a quote, consultation, or have questions about our manufacturing capabilities, don't hesitate to reach out. We look forward to partnering with you.",
+      "imagePrompt": "Welcoming reception area of a Nigerian manufacturing company, professional front desk with Shop4You branding, comfortable waiting area with modern furniture, large windows showing factory floor in background, Nigerian receptionist greeting visitor, warm lighting, corporate professional atmosphere, photorealistic",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "09027556046",
+    "email": "",
+    "address": "34, Oluwaseun Street, Ikorodu, Lagos, Nigeria",
+    "whatsapp": "https://wa.me/2349027556046"
+  }
+}
