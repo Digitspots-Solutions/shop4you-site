@@ -1,42 +1,49 @@
 {
-  "businessName": "Shop4You",
-  "industry": "Manufacturing",
-  "tone": "professional",
-  "tagline": "Quality Manufacturing Solutions for Nigerian Businesses",
+  "businessName": "Lovely Fingers Food Mart Limited",
+  "industry": "FoodTech & Specialty Grocery",
+  "tone": "warm, modern, inviting",
+  "tagline": "Your trusted partner for quality groceries and specialty coffee in Ikorodu",
   "sections": [
     {
       "id": "hero",
       "name": "Hero",
-      "copy": "Shop4You: Your Trusted Manufacturing Partner in Ikorodu\n\nQuality manufacturing solutions designed for Nigerian businesses. From production to delivery, we bring precision and reliability to every project.\n\nGet Started Today",
-      "imagePrompt": "Modern Nigerian manufacturing facility interior with advanced machinery and equipment, workers in safety gear operating production lines, bright industrial lighting, clean organized workspace, Ikorodu Lagos setting, professional industrial photography, high quality, detailed, photorealistic",
+      "copy": "Welcome to Lovely Fingers Food Mart Limited. Experience the perfect blend of technology and tradition as we bring fresh groceries and premium specialty coffee right to your doorstep in Ikorodu. Quality products, reliable service, delivered with care.",
+      "imagePrompt": "Photorealistic image of a vibrant Nigerian grocery store interior with fresh produce displayed in modern wooden crates, specialty coffee beans in glass jars on polished shelves, warm ambient lighting, customers shopping in the background, Lagos aesthetic, professional commercial photography",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "Welcome to Shop4You\n\nBased in the heart of Ikorodu, Lagos, Shop4You is a leading manufacturing company committed to delivering exceptional quality products and services to businesses across Nigeria.\n\nOur state-of-the-art facility at 34 Oluwaseun Street combines modern manufacturing techniques with Nigerian ingenuity to produce solutions that meet the highest standards. We understand the unique needs of Nigerian businesses and tailor our manufacturing processes to deliver value, reliability, and excellence.\n\nWith a focus on quality control, timely delivery, and customer satisfaction, Shop4You has become the go-to manufacturing partner for businesses seeking dependable production solutions in Lagos and beyond.",
-      "imagePrompt": "Professional Nigerian manufacturing team standing proudly in front of their factory building, diverse group of workers and managers, Shop4You facility exterior with clear signage, Ikorodu Lagos neighborhood visible, bright daylight, corporate photography style, authentic Nigerian business setting, photorealistic",
+      "copy": "Lovely Fingers Food Mart Limited (also known as Lovely Fingers Grocery Tech Nigeria) is your premier FoodTech destination in Ikorodu, Lagos. We combine the convenience of modern technology with the warmth of traditional Nigerian market shopping. Founded by a specialty coffee operator with a passion for quality, we've built our reputation on delivering fresh groceries, premium specialty coffee, and exceptional customer service to homes and businesses across Ikorodu and beyond. Our mission is simple: to make quality food products accessible, affordable, and convenient for every Nigerian family.",
+      "imagePrompt": "Warm, inviting photograph of Nigerian grocers arranging fresh fruits and vegetables in a modern shop, specialty coffee station visible in background, natural sunlight streaming through windows, authentic Lagos community atmosphere, professional lifestyle photography",
       "layout": "split"
     },
     {
       "id": "services",
       "name": "Our Services",
-      "copy": "Manufacturing Solutions Tailored to Your Needs\n\nCustom Manufacturing\nWe specialize in custom manufacturing solutions designed to meet your specific business requirements. From concept to completion, our team works closely with you to deliver products that exceed expectations.\n\nQuality Assurance\nEvery product undergoes rigorous quality control processes to ensure it meets international standards. Our commitment to excellence means you receive only the best.\n\nTimely Delivery\nWe understand that time is money in business. Our efficient production systems and logistics ensure your orders are completed and delivered on schedule.\n\nConsultation & Support\nOur expert team provides comprehensive consultation services to help you optimize your manufacturing needs. We offer ongoing support throughout your project lifecycle.",
-      "imagePrompt": "Split screen collage showing various aspects of Nigerian manufacturing: quality control inspection with precision instruments, warehouse with organized inventory, delivery trucks being loaded, consultation meeting between engineers and clients, modern production floor with machinery, professional industrial setting, photorealistic, high detail",
+      "copy": "Fresh Groceries Delivery: Farm-fresh vegetables, fruits, and pantry essentials delivered to your door daily.\n\nSpecialty Coffee: Premium coffee beans, expert brewing equipment, and barista-quality blends for homes and offices.\n\nBulk Orders: Competitive prices for restaurants, hotels, and corporate clients across Lagos.\n\nSame-Day Delivery: Order before noon and receive your groceries the same day within Ikorodu.\n\nSubscription Boxes: Weekly or monthly curated grocery and coffee packages tailored to your needs.\n\nCorporate Supplies: Reliable grocery and beverage solutions for offices and events.",
+      "imagePrompt": "Clean, modern grid layout showing diverse Nigerian food products: fresh tomatoes and peppers, bags of rice, specialty coffee beans being poured, delivery rider on motorcycle with branded packaging, smartphone showing ordering app interface, bright professional product photography",
       "layout": "grid"
     },
     {
       "id": "contact",
       "name": "Contact Us",
-      "copy": "Get in Touch with Shop4You\n\nReady to discuss your manufacturing needs? Our team is here to provide the solutions your business deserves.\n\nVisit Our Facility:\n34, Oluwaseun Street\nIkorodu, Lagos\nNigeria\n\nCall Us:\n09027556046\n\nBusiness Hours:\nMonday - Friday: 8:00 AM - 6:00 PM\nSaturday: 9:00 AM - 2:00 PM\n\nWhether you need a quote, consultation, or have questions about our manufacturing capabilities, don't hesitate to reach out. We look forward to partnering with you.",
-      "imagePrompt": "Welcoming reception area of a Nigerian manufacturing company, professional front desk with Shop4You branding, comfortable waiting area with modern furniture, large windows showing factory floor in background, Nigerian receptionist greeting visitor, warm lighting, corporate professional atmosphere, photorealistic",
+      "copy": "Ready to experience the Lovely Fingers difference? We're here to serve you.\n\n📍 Visit Us: 34, Oluwaseun Street, Ikorodu, Lagos\n📞 Call Us: 09027556046\n💬 WhatsApp: Tap to chat instantly\n🌐 Website: lovelyfingers.com\n\nBusiness Hours:\nMonday - Saturday: 7:00 AM - 8:00 PM\nSunday: 9:00 AM - 6:00 PM\n\nWe deliver across Ikorodu and surrounding areas in Lagos. Contact us today to place your order or discuss bulk supply arrangements for your business.",
+      "imagePrompt": "Professional photograph of a modern Nigerian grocery store shopfront with 'Lovely Fingers Food Mart' signage, welcoming entrance with potted plants, delivery motorcycles parked outside, Ikorodu street scene, golden hour lighting, warm and inviting commercial photography",
       "layout": "centered"
+    },
+    {
+      "id": "testimonials",
+      "name": "What Our Customers Say",
+      "copy": "\"Lovely Fingers has transformed how I shop for groceries. Their specialty coffee is exceptional, and delivery is always on time. Best foodtech service in Ikorodu!\" — Adebayo M., Ikorodu\n\n\"As a restaurant owner, I depend on reliable suppliers. Lovely Fingers delivers quality produce at competitive prices every single time. Highly recommended!\" — Chef Ngozi O., Lagos\n\n\"The convenience is unmatched. I order my weekly groceries and coffee beans through WhatsApp and everything arrives fresh. Customer service is outstanding!\" — Tunde A., Ikorodu",
+      "imagePrompt": "Collage-style image showing happy Nigerian customers: a young professional woman holding grocery bags and smiling, a chef examining fresh vegetables with approval, a family unpacking delivery boxes in their modern Lagos home, authentic candid photography, warm natural lighting",
+      "layout": "cards"
     }
   ],
   "contact": {
     "phone": "09027556046",
-    "email": "",
-    "address": "34, Oluwaseun Street, Ikorodu, Lagos, Nigeria",
+    "email": "info@lovelyfingers.com",
+    "address": "34, Oluwaseun Street, Ikorodu, Lagos",
     "whatsapp": "https://wa.me/2349027556046"
   }
 }
